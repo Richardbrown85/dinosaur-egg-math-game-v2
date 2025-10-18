@@ -52,6 +52,8 @@ body {
     color: var(--light-highlight-color);
 }
 
+/* section styling to push game into the center of the page */
+
 section {
     display: flex;
     justify-content: center; 
