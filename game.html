@@ -44,6 +44,58 @@
             </div>
         </div>
     </nav>
+
+    <section>
+        <!-- Main game container -->
+        <div class="game-container">
+            <!-- Score board -->
+            <div class="score-board">
+                <!-- Correct answers counter -->
+                <div class="score-item">
+                    <div class="score-label">Correct</div>
+                    <div class="score-value correct" id="correctScore">0</div>
+                </div>
+
+                <!-- Wrong answers counter -->
+                <div class="score-item">
+                    <div class="score-label">Wrong</div>
+                    <div class="score-value wrong" id="wrongScore">0</div>
+                </div>
+
+                <!-- Current difficulty level -->
+                <div class="score-item">
+                    <div class="score-label">Level</div>
+                    <div class="score-value level" id="difficultyLevel">1</div>
+                </div>
+            </div>
+            <!-- Main game area -->
+            <div class="game-area">
+                <!-- Question display -->
+                <div class="question">
+                    <!-- First number (shows card with eggs) -->
+                    <div class="number-display" id="num1"></div>
+
+                    <!-- Plus operator -->
+                    <div class="operator">+</div>
+
+                    <!-- Second number (shows card with eggs) -->
+                    <div class="number-display" id="num2"></div>
+
+                    <!-- Equals sign -->
+                    <div class="operator">=</div>
+
+                    <!-- Question mark -->
+                    <div class="operator">?</div>
+                </div>
+
+                <!-- Answer section -->
+                <div class="answer-section">
+                    <!-- Multiple choice buttons will be generated here by JavaScript -->
+                    <div id="multipleChoiceContainer" class="multiple-choice"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
 
