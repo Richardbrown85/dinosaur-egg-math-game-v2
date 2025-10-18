@@ -52,6 +52,13 @@ body {
     color: var(--light-highlight-color);
 }
 
+section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 70px;
+}
+
 /* Main container */
    
 .game-container {
