@@ -361,3 +361,215 @@ section {
     transform: scale(1.1);
     background: #ffd700; /* Brighter gold */
 }
+
+/* Media queries */
+
+/* Extra Small Devices (Phones, less than 576px) */
+@media (max-width: 575px) {
+    .navbar-brand {
+    font-size: 0.5em;
+    }
+    
+    .game-container {
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .score-board {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .score-item {
+        padding: 10px 0;
+    }
+    
+    .score-value {
+        font-size: 1.8em;
+    }
+    
+    .game-area {
+        padding: 20px;
+    }
+    
+    .question {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .operator {
+        font-size: 2em;
+    }
+    
+    .card-image {
+        width: 100px;
+        height: 125px;
+    }
+    
+    .multiple-choice {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .choice-btn {
+        width: 100%;
+        padding: 20px;
+        font-size: 2em;
+    }
+    
+    .feedback-box {
+        padding: 25px;
+        margin: 0 10px;
+    }
+    
+    .feedback-icon {
+        font-size: 3em;
+    }
+    
+    .feedback-message {
+        font-size: 1.2em;
+    }
+    
+    .next-btn {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+    
+    .level-up-box {
+        padding: 30px;
+        margin: 0 10px;
+    }
+    
+    .level-up-icon {
+        font-size: 4em;
+    }
+    
+    .level-up-message {
+        font-size: 1.3em;
+    }
+    .continue-btn {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+        
+
+}
+
+/* Small Devices (Landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up */
+@media screen and (min-width: 768px) {
+    
+}
+
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .game-container {
+        max-width: 750px;
+    }
+    
+    .card-image {
+        width: 180px;
+        height: 225px;
+    }
+    
+    .choice-btn {
+        padding: 30px 50px;
+        font-size: 2.5em;
+    }
+}    
+
+/* Extra Large Devices (Large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .game-container {
+        max-width: 800px;
+        padding: 10px;
+    }
+    
+    .game-area {
+        padding: 20px;
+    }
+    
+    .card-image {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .choice-btn {
+        padding: 35px 60px;
+        font-size: 2.8em;
+        min-width: 150px;
+    }
+    
+    .operator {
+        font-size: 3.5em;
+    }
+    
+    .score-value {
+        font-size: 2.5em;
+    }
+}
+
+/* Landscape Orientation - Special handling for phones in landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .game-container {
+        padding: 15px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .score-board {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .score-value {
+        font-size: 1.5em;
+    }
+    
+    .game-area {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .question {
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .card-image {
+        width: 80px;
+        height: 100px;
+    }
+    
+    .operator {
+        font-size: 2em;
+    }
+    
+    .choice-btn {
+        padding: 15px 30px;
+        font-size: 1.8em;
+    }
+    
+    .feedback-box,
+    .level-up-box {
+        padding: 20px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+}
+
+/* XL devices (large laptops, 1200 px and up) */
+@media screen and (min-width: 2560px) {
+    
+    
+}
