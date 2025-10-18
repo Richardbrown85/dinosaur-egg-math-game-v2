@@ -19,3 +19,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Global styles */
+body {
+    background-image: url(../images/background-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+#navbar {
+    background-color: var(--highlight-color);
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-size: 1em;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.navbar-brand:hover {
+    color: var(--light-highlight-color);
+}
+
+.nav-link {
+    color: var(--secondary-color)
+}
+
+.nav-link:hover {
+    color: var(--light-highlight-color);
+}
