@@ -443,6 +443,10 @@ h1 {
     .navbar-brand {
     font-size: 0.5em;
     }
+
+    #footer {
+    font-size: 1em;
+    }
     
     .game-container {
         padding: 10px;
@@ -527,8 +531,6 @@ h1 {
         padding: 15px 30px;
         font-size: 1.2em;
     }
-
-        
 
 }
 
