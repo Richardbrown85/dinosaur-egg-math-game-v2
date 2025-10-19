@@ -28,6 +28,11 @@ body {
     background-repeat: no-repeat;   
 }
 
+h1 {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
 /* Navigation */
 
 #navbar {
@@ -53,6 +58,72 @@ body {
 
 .nav-link:hover {
     color: var(--secondary-color);
+}
+
+/* Custom modal */
+
+.modal-content {
+    background-color: var(--highlight-color);
+}
+
+/* Header and footer */
+.modal-header, .modal-footer {
+    border: none;
+    font-family: var(--secondary-font);
+    justify-content: center;
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.modal-body {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    color: var(--primary-color);
+    justify-content: center;
+}
+
+.modal-footer .btn-secondary {
+  background-color: var(--primary-color);
+  color: var(--highlight-color);
+  border: none;
+  font-size: 30px;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.home-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    max-width: 700px;
+    width: 95%;
+    margin-top: 220px;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+#footer {
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    color: var(--primary-color);
+    background-color: var(--highlight-color);
+    margin-top: 400px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
 }
 
 /* Game section */
