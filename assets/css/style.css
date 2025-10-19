@@ -21,11 +21,14 @@
 }
 
 /* Global styles */
+
 body {
     background-image: url(../images/background-image.webp);
     background-size: cover;
     background-repeat: no-repeat;   
 }
+
+/* Navigation */
 
 #navbar {
     background-color: var(--highlight-color);
@@ -52,9 +55,9 @@ body {
     color: var(--secondary-color);
 }
 
-/* section styling to push game into the center of the page */
+/* Game section */
 
-section {
+.game {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -67,6 +70,7 @@ section {
     background-color: rgba(255, 255, 255, 0.6); 
     border-radius: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 5px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); 
     max-width: 700px;
@@ -93,8 +97,8 @@ section {
 
 .score-label {
     font-family: var(--secondary-font);
-    font-size: 20px;
-    color: var(--secondary-color);
+    font-size: 30px;
+    color: var(--primary-color);
     margin-bottom: 5px;
 }
 
@@ -105,7 +109,7 @@ section {
 }
 
 .correct {
-    color: var(--highlight-color);
+    color: var(--primary-color);
 }
 
 .wrong {
@@ -148,7 +152,7 @@ section {
     font-family: var(--secondary-font);
     font-size: 3em;
     font-weight: bold;
-    color: var(--highlight-color); 
+    color: var(--primary-color); 
 }
 
 /* Card images */
@@ -170,7 +174,6 @@ section {
     transform: scale(1.05); 
 }
 
-
 /* Answer section */
 
 .answer-section {
@@ -189,11 +192,11 @@ section {
 .choice-btn {
     font-family: var(--secondary-font);
     background: white;
-    border: 2px solid var(--highlight-color);
+    border: 4px solid var(--primary-color);
     padding: 20px 20px;
     font-size: 1.5em;
-    font-weight: 400;
-    color: var(--highlight-color); 
+    font-weight: bold;
+    color: var(--primary-color); 
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.2s;
