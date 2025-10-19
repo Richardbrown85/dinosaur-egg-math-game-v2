@@ -36,20 +36,20 @@ body {
 
 .navbar-brand {
     font-size: 1em;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .navbar-brand:hover {
-    color: var(--light-highlight-color);
+    color: var(--secondary-color);
 }
 
 .nav-link {
-    color: var(--secondary-color)
+    color: var(--primary-color)
 }
 
 .nav-link:hover {
-    color: var(--light-highlight-color);
+    color: var(--secondary-color);
 }
 
 /* section styling to push game into the center of the page */
