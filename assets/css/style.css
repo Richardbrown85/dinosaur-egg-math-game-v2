@@ -64,11 +64,11 @@ h1 {
 
 .modal-content {
     background-color: var(--highlight-color);
+    border-radius: 5%;
 }
 
-/* Header and footer */
 .modal-header, .modal-footer {
-    border: none;
+    border-color: var(--primary-color);
     font-family: var(--secondary-font);
     justify-content: center;
 }
@@ -87,16 +87,16 @@ h1 {
 }
 
 .modal-footer .btn-secondary {
-  background-color: var(--primary-color);
-  color: var(--highlight-color);
-  border: none;
-  font-size: 30px;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    border: none;
+    font-size: 20px;
 }
 
 .modal-footer .btn-secondary:hover {
-  background-color: var(--highlight-color);
-  color: var(--secondary-color);
-  border: none;
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+    border: none;
 }
 
 .home-container {
