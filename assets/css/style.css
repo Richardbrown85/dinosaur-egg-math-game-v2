@@ -488,6 +488,10 @@ p {
     #footer p {
         font-size: 1em;
     }
+
+    .custom-button {
+        font-size: 1.5em;
+    }
     
     .game-container {
         padding: 10px;
@@ -577,11 +581,13 @@ p {
 
 /* Small Devices (Landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-    
+    .custom-button {
+        font-size: 1.5em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .card-image {
         width: 180px;
         height: 225px;
@@ -590,6 +596,11 @@ p {
     .game-container {
         max-height: 100%;
     }
+
+    .custom-button {
+        font-size: 1.5em;
+    }
+
 }
 
 /* Large Devices (Desktops, 992px and up) */
