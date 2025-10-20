@@ -135,8 +135,8 @@ p {
 }
 
 .custom-button {
-    background-color: var(--highlight-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--light-highlight-color);
     font-family: var(--secondary-font);
     font-size: 40px;
     text-transform: uppercase;
