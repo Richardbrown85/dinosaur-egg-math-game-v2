@@ -31,6 +31,8 @@ body {
 h1 {
     font-family: var(--secondary-font);
     text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 /* Navigation */
