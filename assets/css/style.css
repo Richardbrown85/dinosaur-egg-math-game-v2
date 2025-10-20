@@ -692,6 +692,7 @@ p {
 
 /* XL devices (large laptops, 1200 px and up) */
 @media screen and (min-width: 2560px) {
-    
-    
+    #footer {
+        margin-top: 1010px;
+    }
 }
