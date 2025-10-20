@@ -121,9 +121,17 @@ p {
     text-align: center;
 }
 
+/* Buttons */
+
 .play-button {
     justify-content: center;
     text-align: center;
+}
+
+.exit-button {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .custom-button {
@@ -131,11 +139,12 @@ p {
     color: var(--primary-color);
     font-family: var(--secondary-font);
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 .custom-button:hover {
-    background-color: rgba(255, 255, 255, 0.0);
-    color: var(--secondary-color)
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-color)
 }
 
 #footer {
