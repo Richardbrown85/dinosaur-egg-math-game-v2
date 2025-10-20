@@ -82,7 +82,7 @@ function checkLevelUp() {
 
 function showLevelUpModal() {
     updateDifficultyDisplay();
-    levelUpMessage.textContent = `🎊 Congratulations! 🎊\nYou've reached Level ${difficultyLevel}!`;
+    levelUpMessage.textContent = `Wow! You made it to Level 2—awesome work!` ${difficultyLevel}!`;
     levelUpModal.classList.add('show');  
 }
 
