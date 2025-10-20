@@ -341,7 +341,8 @@ p {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    animation: popIn 0.3s ease-out; 
+    animation: popIn 0.3s ease-out;
+    border: 5px solid var(--primary-color); 
 }
 
 @keyframes popIn {
@@ -408,7 +409,7 @@ p {
     text-align: center;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     animation: celebration 0.6s ease-out; 
-    border: 5px solid gold;
+    border: 5px solid var(--primary-color);
 }
 
 @keyframes celebration {
