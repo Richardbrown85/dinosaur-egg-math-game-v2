@@ -211,7 +211,7 @@ function showFeedback(isCorrect) {
         
         feedbackIcon.textContent = '👍';
         feedbackMessage.textContent = 'Good Job!';
-        feedbackMessage.style.color = '#6B9E3D';  
+        feedbackMessage.style.color = '#2D5016';  
     } else {
         
         feedbackIcon.textContent = '❌';
