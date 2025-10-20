@@ -561,6 +561,10 @@ p {
         width: 180px;
         height: 225px;
     }
+
+    .game-container {
+        max-height: 100%;
+    }
 }
 
 /* Large Devices (Desktops, 992px and up) */
@@ -614,9 +618,8 @@ p {
 /* Landscape Orientation - Special handling for phones in landscape */
 @media (max-height: 500px) and (orientation: landscape) {
     .game-container {
-        padding: 15px;
-        max-height: 80vh;
-        overflow-y: auto;
+        padding-bottom: 20px;
+        max-height: 100vh;
     }
     
     .score-board {
