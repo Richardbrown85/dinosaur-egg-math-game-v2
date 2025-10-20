@@ -38,7 +38,7 @@ h1 {
 
 p {
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size: 40px;
     color: var(--primary-color);
 }
 
@@ -445,15 +445,23 @@ p {
 /* Extra Small Devices (Phones, less than 576px) */
 @media (max-width: 575px) {
     .navbar-brand {
-    font-size: 0.5em;
+        font-size: 0.5em;
     }
 
     .nav-link {
-    font-size: 0.5em;
+        font-size: 0.7em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .home-container {
+        margin-top: 100px;
     }
 
     #footer p {
-    font-size: 1em;
+        font-size: 1em;
     }
     
     .game-container {
