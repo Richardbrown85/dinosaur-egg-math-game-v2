@@ -643,8 +643,7 @@ p {
 /* Landscape Orientation - Special handling for phones in landscape */
 @media (max-height: 500px) and (orientation: landscape) {
     .game-container {
-        padding-bottom: 20px;
-        max-height: 100vh;
+        max-height: 100%;
     }
     
     .score-board {
@@ -693,6 +692,6 @@ p {
 /* XL devices (large laptops, 1200 px and up) */
 @media screen and (min-width: 2560px) {
     #footer {
-        margin-top: 1010px;
+        margin-top: 1020px;
     }
 }
