@@ -1,42 +1,42 @@
 /* GAME STATE VARIABLES */
 
-// Score tracking
-let correctScore = 0;        // Number of correct answers
-let wrongScore = 0;          // Number of wrong answers
-let currentNum1 = 0;         // First number in the addition problem
-let currentNum2 = 0;         // Second number in the addition problem
-let currentAnswer = 0;       // The correct answer to the current question
-let difficultyLevel = 1;     // Current difficulty level (1, 2, or 3)
+
+let correctScore = 0;        
+let wrongScore = 0;          
+let currentNum1 = 0;         
+let currentNum2 = 0;         
+let currentAnswer = 0;       
+let difficultyLevel = 1;     
 
 const LEVEL_UP_THRESHOLDS = {
-    level2: 15,  // Player reaches level 2 after 15 correct answers
+    level2: 15,  
 };
 
 /* DOM ELEMENT REFERENCES */
 
-const num1Display = document.getElementById('num1');                    // First number display area
-const num2Display = document.getElementById('num2');                    // Second number display area
-const multipleChoiceContainer = document.getElementById('multipleChoiceContainer'); // Answer buttons container
-const feedbackModal = document.getElementById('feedbackModal');         // Correct/Wrong popup
-const feedbackIcon = document.getElementById('feedbackIcon');           // Emoji icon in feedback
-const feedbackMessage = document.getElementById('feedbackMessage');     // Feedback text message
-const nextBtn = document.getElementById('nextBtn');                     // Next Question button
-const levelUpModal = document.getElementById('levelUpModal');           // Level up celebration popup
-const levelUpMessage = document.getElementById('levelUpMessage');       // Level up message text
-const continueBtn = document.getElementById('continueBtn');             // Continue button in level up modal
-const correctScoreEl = document.getElementById('correctScore');         // Correct score display
-const wrongScoreEl = document.getElementById('wrongScore');             // Wrong score display
-const difficultyLevelEl = document.getElementById('difficultyLevel');   // Level display
+const num1Display = document.getElementById('num1');                    
+const num2Display = document.getElementById('num2');                   
+const multipleChoiceContainer = document.getElementById('multipleChoiceContainer'); 
+const feedbackModal = document.getElementById('feedbackModal');         
+const feedbackIcon = document.getElementById('feedbackIcon');           
+const feedbackMessage = document.getElementById('feedbackMessage');     
+const nextBtn = document.getElementById('nextBtn');                     
+const levelUpModal = document.getElementById('levelUpModal');           
+const levelUpMessage = document.getElementById('levelUpMessage');       
+const continueBtn = document.getElementById('continueBtn');             
+const correctScoreEl = document.getElementById('correctScore');         
+const wrongScoreEl = document.getElementById('wrongScore');             
+const difficultyLevelEl = document.getElementById('difficultyLevel');   
 
 
 /* CARD IMAGE CONFIGURATION */
 
 const cardImages = [
-    'assets/images/card1.webp',  // Index 0: 1 egg
-    'assets/images/card2.webp',  // Index 1: 2 eggs
-    'assets/images/card3.webp',  // Index 2: 3 eggs
-    'assets/images/card4.webp',  // Index 3: 4 eggs
-    'assets/images/card5.webp'   // Index 4: 5 eggs
+    'assets/images/card1.webp',  
+    'assets/images/card2.webp',  
+    'assets/images/card3.webp',  
+    'assets/images/card4.webp',  
+    'assets/images/card5.webp'   
 ];
 
 
