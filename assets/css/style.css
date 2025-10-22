@@ -76,7 +76,7 @@ p {
 /* Custom modal */
 
 .modal-content {
-    background-color: var(--highlight-color);
+    background-color: var(--light-highlight-color);
     border-radius: 5%;
 }
 
@@ -101,15 +101,15 @@ p {
 }
 
 .modal-footer .btn-secondary {
-    background-color: var(--primary-color);
-    color: var(--highlight-color);
+    background-color: var(--secondary-color);
+    color: var(--light-highlight-color);
     border: none;
     font-size: 20px;
 }
 
 .modal-footer .btn-secondary:hover {
-    background-color: var(--highlight-color);
-    color: var(--secondary-color);
+    background-color: var(--light-highlight-color);
+    color: var(--primary-color);
     border: none;
 }
 
