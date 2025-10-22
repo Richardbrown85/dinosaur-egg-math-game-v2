@@ -49,7 +49,7 @@ p {
 /* Navigation */
 
 #navbar {
-    background-color: var(--highlight-color);
+    background-color: var(--light-highlight-color);
     font-family: var(--secondary-font);
     font-size: 2em;
     font-weight: 400;
@@ -156,7 +156,7 @@ p {
     font-family: var(--secondary-font);
     font-size: 15px;
     color: var(--primary-color);
-    background-color: var(--highlight-color);
+    background-color: var(--light-highlight-color);
     margin-top: 400px;
     justify-content: center;
     text-align: center;
