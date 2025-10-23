@@ -269,53 +269,38 @@ function showEndGameModal() {
     const finalCorrect = document.getElementById('finalCorrect');
     const finalWrong = document.getElementById('finalWrong');
     const finalAccuracy = document.getElementById('finalAccuracy');
-    
-    // Calculate accuracy percentage
+
+
     const total = correctScore + wrongScore;
     const accuracy = total > 0 ? Math.round((correctScore / total) * 100) : 0;
-    
-    // Update final stats
+
+
     finalCorrect.textContent = correctScore;
     finalWrong.textContent = wrongScore;
     finalAccuracy.textContent = accuracy + '%';
-    
-    // Show the modal
+
+
     endGameModal.classList.add('show');
-    
-    // Optional: Play celebration sound if available
-    if (typeof playSound === 'function') {
-        playSound('levelUp');
-    }
+
 }
 
-/**
- * Resets the game to start over
- */
 function resetGame() {
-    // Reset all scores
     correctScore = 0;
     wrongScore = 0;
     difficultyLevel = 1;
-    
-    // Update displays
+
     correctScoreEl.textContent = correctScore;
     wrongScoreEl.textContent = wrongScore;
     updateDifficultyDisplay();
-    
-    // Hide end game modal
+
     const endGameModal = document.getElementById('endGameModal');
     endGameModal.classList.remove('show');
-    
-    // Generate new question
+
     generateQuestion();
 }
 
-/**
- * Get DOM references for end game elements
- */
 const playAgainBtn = document.getElementById('playAgainBtn');
 
-// Add event listener for Play Again button
 if (playAgainBtn) {
     playAgainBtn.addEventListener('click', resetGame);
 }
