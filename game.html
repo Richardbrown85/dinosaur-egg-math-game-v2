@@ -135,6 +135,47 @@
             <button class="continue-btn" id="continueBtn">Continue Playing!</button>
         </div>
     </div>
+    
+    <!-- End Game Modal-->
+    <div class="end-game-modal" id="endGameModal">
+        <div class="end-game-box">
+            <div class="end-game-icon">🏆</div>
+            <h1 class="end-game-title">Congratulations!</h1>
+            <p class="end-game-message">You've mastered addition!</p>
+            
+            <!-- Final Score Display -->
+            <div class="final-stats">
+                <div class="final-stat">
+                    <div class="final-stat-label">Correct Answers</div>
+                    <div class="final-stat-value correct" id="finalCorrect">20</div>
+                </div>
+                <div class="final-stat">
+                    <div class="final-stat-label">Wrong Answers</div>
+                    <div class="final-stat-value wrong" id="finalWrong">0</div>
+                </div>
+                <div class="final-stat">
+                    <div class="final-stat-label">Accuracy</div>
+                    <div class="final-stat-value level" id="finalAccuracy">100%</div>
+                </div>
+            </div>
+            
+            <!-- Achievement Badge -->
+            <div class="achievement-badge">
+                <div class="badge-icon">⭐</div>
+                <div class="badge-text">Math Master!</div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="end-game-buttons">
+                <button class="end-game-btn play-again-btn" id="playAgainBtn">
+                    🔄 Play Again
+                </button>
+                <a href="index.html" class="end-game-btn home-btn">
+                    🏠 Go Home
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
