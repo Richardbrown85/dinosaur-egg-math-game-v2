@@ -194,7 +194,7 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     padding: 20px;
-    background: #f8f9fa;
+    background: var(--light-highlight-color);
     border-radius: 10px;
 }
 
@@ -230,7 +230,7 @@ p {
 /* Game area */
 
 .game-area {
-    background: #f8f9fa;
+    background: var(--light-highlight-color);
     padding: 40px;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -298,7 +298,7 @@ p {
 
 .choice-btn {
     font-family: var(--secondary-font);
-    background: white;
+    background: var(--light-highlight-color);
     border: 4px solid var(--primary-color);
     padding: 20px 20px;
     font-size: 1.5em;
@@ -313,7 +313,7 @@ p {
 .choice-btn:hover {
     border: 2px solid var(--secondary-color);
     background: var(--secondary-color);
-    color: white;
+    color: var(--light-highlight-color);
     transform: scale(1.1);
 }
 
@@ -341,7 +341,7 @@ p {
 }
 
 .feedback-box {
-    background: white;
+    background: var(--light-highlight-color);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -376,7 +376,7 @@ p {
 
 .next-btn {
     background: var(--secondary-color);
-    color: white;
+    color: var(--light-highlight-color);
     border: none;
     padding: 15px 40px;
     font-size: 1.2em;
@@ -409,7 +409,7 @@ p {
 }
 
 .level-up-box {
-    background: white;
+    background: var(--light-highlight-color);
     padding: 60px;
     border-radius: 20px;
     text-align: center;
@@ -459,7 +459,7 @@ p {
 
 .continue-btn {
     background: var(--secondary-color);
-    color: white;
+    color: var(--light-highlight-color);
     border: none;
     padding: 20px 50px;
     font-size: 1.5em;
