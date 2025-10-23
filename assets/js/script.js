@@ -160,7 +160,7 @@ function checkMultipleChoiceAnswer(selectedAnswer) {
 
         correctScore++;
         correctScoreEl.textContent = correctScore;
-        if (correctScore === 20) {
+        if (correctScore === 30) {
             showEndGameModal();
             return;
         }
