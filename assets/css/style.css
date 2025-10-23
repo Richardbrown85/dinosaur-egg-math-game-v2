@@ -475,6 +475,7 @@ p {
 }
 
 /* End game modal */
+
 .end-game-modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -786,6 +787,55 @@ p {
         font-size: 1.2em;
     }
 
+    .end-game-box {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    
+    .end-game-icon {
+        font-size: 5em;
+    }
+    
+    .end-game-title {
+        font-size: 2em;
+    }
+    
+    .end-game-message {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+    
+    .final-stats {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .final-stat-label {
+        font-size: 0.8em;
+    }
+    
+    .final-stat-value {
+        font-size: 1.8em;
+    }
+    
+    .achievement-badge {
+        padding: 15px 30px;
+        margin-bottom: 30px;
+    }
+    
+    .badge-icon {
+        font-size: 2em;
+    }
+    
+    .badge-text {
+        font-size: 1.2em;
+    }
+    
+    .end-game-btn {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
 }
 
 /* Small Devices (Landscape phones, 576px and up) */
@@ -820,6 +870,39 @@ p {
         font-size: 1.5em;
     }
 
+      .end-game-box {
+        padding: 40px 30px;
+    }
+    
+    .end-game-icon {
+        font-size: 6em;
+    }
+    
+    .end-game-title {
+        font-size: 2.3em;
+    }
+    
+    .end-game-message {
+        font-size: 1.3em;
+    }
+    
+    .final-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .final-stat-value {
+        font-size: 2em;
+    }
+    
+    .end-game-buttons {
+        flex-direction: column;
+    }
+    
+    .end-game-btn {
+        width: 100%;
+    }
 }
 
 /* Large Devices (Desktops, 992px and up) */
