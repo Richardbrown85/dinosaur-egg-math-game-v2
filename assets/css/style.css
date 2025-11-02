@@ -42,7 +42,7 @@ h1 {
 
 p {
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--primary-color);
 }
 
@@ -95,7 +95,7 @@ p {
 
 .modal-body {
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--primary-color);
     justify-content: center;
 }
@@ -104,7 +104,7 @@ p {
     background-color: var(--secondary-color);
     color: var(--light-highlight-color);
     border: none;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .modal-footer .btn-secondary:hover {
@@ -145,7 +145,7 @@ p {
     background-color: var(--secondary-color);
     color: var(--light-highlight-color);
     font-family: var(--secondary-font);
-    font-size: 40px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -156,7 +156,7 @@ p {
 
 #footer {
     font-family: var(--secondary-font);
-    font-size: 15px;
+    font-size: 1rem;
     color: var(--primary-color);
     background-color: var(--light-highlight-color);
     justify-content: center;
@@ -206,14 +206,14 @@ p {
 
 .score-label {
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 5px;
 }
 
 .score-value {
     font-family: var(--secondary-font);
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
