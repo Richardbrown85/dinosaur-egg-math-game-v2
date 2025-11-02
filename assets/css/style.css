@@ -131,12 +131,14 @@ p {
 .play-button {
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .exit-button {
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .custom-button {
@@ -157,12 +159,12 @@ p {
     font-size: 15px;
     color: var(--primary-color);
     background-color: var(--light-highlight-color);
-    margin-top: 400px;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
     padding-top: 15px;
 }
+
 
 /* Game section */
 
