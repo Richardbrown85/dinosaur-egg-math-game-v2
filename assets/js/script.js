@@ -78,13 +78,13 @@ function createCardDisplay(num) {
     // Creates a container div for the card
     const container = document.createElement("div");
     container.className = "card-container";
-    
+
     // Creates an image element for the eggs
     const card = document.createElement("img");
     card.src = cardImages[num - 1];
     card.alt = `card with ${num} eggs`;
     card.className = "card-image";
-    
+
     // Adds the card to the container
     container.appendChild(card);
 
