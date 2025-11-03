@@ -13,38 +13,40 @@ const LEVEL_UP_THRESHOLDS = {
 
 /* DOM ELEMENT REFERENCES */
 
-const num1Display = document.getElementById('num1');
-const num2Display = document.getElementById('num2');
-const multipleChoiceContainer = document.getElementById('multipleChoiceContainer');
-const feedbackModal = document.getElementById('feedbackModal');
-const feedbackIcon = document.getElementById('feedbackIcon');
-const feedbackMessage = document.getElementById('feedbackMessage');
-const nextBtn = document.getElementById('nextBtn');
-const levelUpModal = document.getElementById('levelUpModal');
-const levelUpMessage = document.getElementById('levelUpMessage');
-const continueBtn = document.getElementById('continueBtn');
-const correctScoreEl = document.getElementById('correctScore');
-const wrongScoreEl = document.getElementById('wrongScore');
-const difficultyLevelEl = document.getElementById('difficultyLevel');
-const playAgainBtn = document.getElementById('playAgainBtn');
+const num1Display = document.getElementById("num1");
+const num2Display = document.getElementById("num2");
+const multipleChoiceContainer = document.getElementById(
+    "multipleChoiceContainer"
+);
+const feedbackModal = document.getElementById("feedbackModal");
+const feedbackIcon = document.getElementById("feedbackIcon");
+const feedbackMessage = document.getElementById("feedbackMessage");
+const nextBtn = document.getElementById("nextBtn");
+const levelUpModal = document.getElementById("levelUpModal");
+const levelUpMessage = document.getElementById("levelUpMessage");
+const continueBtn = document.getElementById("continueBtn");
+const correctScoreEl = document.getElementById("correctScore");
+const wrongScoreEl = document.getElementById("wrongScore");
+const difficultyLevelEl = document.getElementById("difficultyLevel");
+const playAgainBtn = document.getElementById("playAgainBtn");
 
 /* EVENT LISTENERS */
 
 // When "Next Question" button is clicked, hide feedback and show new question
-nextBtn.addEventListener('click', hideFeedback);
+nextBtn.addEventListener("click", hideFeedback);
 
 // When "Continue Playing" button is clicked (in level up modal)
-continueBtn.addEventListener('click', hideLevelUpModal);
+continueBtn.addEventListener("click", hideLevelUpModal);
 
 // Allow clicking outside feedback modal to close it
-feedbackModal.addEventListener('click', (e) => {
+feedbackModal.addEventListener("click", (e) => {
     if (e.target === feedbackModal) {
         hideFeedback();
     }
 });
 
 // Allow clicking outside level up modal to close it
-levelUpModal.addEventListener('click', (e) => {
+levelUpModal.addEventListener("click", (e) => {
     if (e.target === levelUpModal) {
         hideLevelUpModal();
     }
@@ -52,20 +54,18 @@ levelUpModal.addEventListener('click', (e) => {
 
 // Add click event to Play Again button
 if (playAgainBtn) {
-    playAgainBtn.addEventListener('click', resetGame);
+    playAgainBtn.addEventListener("click", resetGame);
 }
-
 
 /* CARD IMAGE CONFIGURATION */
 
 const cardImages = [
-    'assets/images/card1.webp',
-    'assets/images/card2.webp',
-    'assets/images/card3.webp',
-    'assets/images/card4.webp',
-    'assets/images/card5.webp'
+    "assets/images/card1.webp",
+    "assets/images/card2.webp",
+    "assets/images/card3.webp",
+    "assets/images/card4.webp",
+    "assets/images/card5.webp",
 ];
-
 
 /* CARD DISPLAY FUNCTIONS */
 
@@ -75,19 +75,21 @@ const cardImages = [
  * @returns {HTMLElement} - Container with the card image
  */
 function createCardDisplay(num) {
-    const container = document.createElement('div');
-    container.className = 'card-container';
-
-    const card = document.createElement('img');
+    // Creates a container div for the card
+    const container = document.createElement("div");
+    container.className = "card-container";
+    
+    // Creates an image element for the eggs
+    const card = document.createElement("img");
     card.src = cardImages[num - 1];
     card.alt = `card with ${num} eggs`;
-    card.className = 'card-image';
-
+    card.className = "card-image";
+    
+    // Adds the card to the container
     container.appendChild(card);
 
     return container;
 }
-
 
 /* DIFFICULTY SYSTEM */
 
@@ -102,12 +104,16 @@ function getDifficultySettings() {
         case 1:
             // Level 1: Numbers 1-4, sums up to 5
             return {
-                max1: 4, max2: 4, maxSum: 5
+                max1: 4,
+                    max2: 4,
+                    maxSum: 5,
             };
         case 2:
             // Level 2: Numbers 1-5, sums up to 10
             return {
-                max1: 5, max2: 5, maxSum: 10
+                max1: 5,
+                    max2: 5,
+                    maxSum: 10,
             };
     }
 }
@@ -135,14 +141,14 @@ function checkLevelUp() {
 function showLevelUpModal() {
     updateDifficultyDisplay();
     levelUpMessage.textContent = `Wow! Awesome work! You made it to level ${difficultyLevel}!`;
-    levelUpModal.classList.add('show');
+    levelUpModal.classList.add("show");
 }
 
 /**
  * Hides the level-up modal and generates a new question
  */
 function hideLevelUpModal() {
-    levelUpModal.classList.remove('show');
+    levelUpModal.classList.remove("show");
     generateQuestion();
 }
 
@@ -154,7 +160,6 @@ function updateDifficultyDisplay() {
         difficultyLevelEl.textContent = difficultyLevel;
     }
 }
-
 
 /* MULTIPLE CHOICE SYSTEM */
 
@@ -177,10 +182,14 @@ function generateMultipleChoiceOptions(correctAnswer) {
         // Generate a wrong answer that's close to the correct answer
         const offset = Math.random() < 0.5 ? -1 : 1;
         const offsetAmount = Math.floor(Math.random() * 2) + 1;
-        wrongAnswer = correctAnswer + (offset * offsetAmount);
+        wrongAnswer = correctAnswer + offset * offsetAmount;
 
         // Make sure it's within valid range and different from correct answer
-        if (wrongAnswer >= 2 && wrongAnswer <= settings.maxSum && wrongAnswer !== correctAnswer) {
+        if (
+            wrongAnswer >= 2 &&
+            wrongAnswer <= settings.maxSum &&
+            wrongAnswer !== correctAnswer
+        ) {
             options.add(wrongAnswer);
         }
     }
@@ -200,15 +209,14 @@ function generateMultipleChoiceOptions(correctAnswer) {
  * @param {Array} options - Array of answer options
  */
 function createMultipleChoiceButtons(options) {
-    multipleChoiceContainer.innerHTML = '';
+    multipleChoiceContainer.innerHTML = "";
 
-
-    options.forEach(option => {
-        const button = document.createElement('button');
-        button.className = 'choice-btn';
+    options.forEach((option) => {
+        const button = document.createElement("button");
+        button.className = "choice-btn";
         button.textContent = option;
 
-        button.addEventListener('click', () => checkMultipleChoiceAnswer(option));
+        button.addEventListener("click", () => checkMultipleChoiceAnswer(option));
         multipleChoiceContainer.appendChild(button);
     });
 }
@@ -225,7 +233,7 @@ function checkMultipleChoiceAnswer(selectedAnswer) {
         // Correct answer
         correctScore++;
         correctScoreEl.textContent = correctScore;
-        
+
         // Checks if game is complete
         if (correctScore === 30) {
             showEndGameModal();
@@ -247,7 +255,6 @@ function checkMultipleChoiceAnswer(selectedAnswer) {
     }
 }
 
-
 /* QUESTION GENERATION */
 
 /**
@@ -268,9 +275,9 @@ function generateQuestion() {
     currentAnswer = currentNum1 + currentNum2;
 
     // Clear previous question
-    num1Display.innerHTML = '';
-    num2Display.innerHTML = '';
-    
+    num1Display.innerHTML = "";
+    num2Display.innerHTML = "";
+
     // Display the cards for both numbers
     num1Display.appendChild(createCardDisplay(currentNum1));
     num2Display.appendChild(createCardDisplay(currentNum2));
@@ -279,7 +286,6 @@ function generateQuestion() {
     const options = generateMultipleChoiceOptions(currentAnswer);
     createMultipleChoiceButtons(options);
 }
-
 
 /* FEEDBACK SYSTEM */
 
@@ -290,24 +296,24 @@ function generateQuestion() {
 function showFeedback(isCorrect) {
     if (isCorrect) {
         // Show success message
-        feedbackIcon.textContent = '👍';
-        feedbackMessage.textContent = 'Good Job!';
-        feedbackMessage.style.color = '#2D5016';
+        feedbackIcon.textContent = "👍";
+        feedbackMessage.textContent = "Good Job!";
+        feedbackMessage.style.color = "#2D5016";
     } else {
         // Show error message with correct answer
-        feedbackIcon.textContent = '❌';
+        feedbackIcon.textContent = "❌";
         feedbackMessage.textContent = `Try again! ${currentAnswer}`;
-        feedbackMessage.style.color = '#dc3545';
+        feedbackMessage.style.color = "#dc3545";
     }
 
-    feedbackModal.classList.add('show');
+    feedbackModal.classList.add("show");
 }
 
 /**
  * Hides the feedback modal and generates next question
  */
 function hideFeedback() {
-    feedbackModal.classList.remove('show');
+    feedbackModal.classList.remove("show");
     generateQuestion();
 }
 
@@ -318,10 +324,10 @@ function hideFeedback() {
  * Displays final stats and achievement
  */
 function showEndGameModal() {
-    const endGameModal = document.getElementById('endGameModal');
-    const finalCorrect = document.getElementById('finalCorrect');
-    const finalWrong = document.getElementById('finalWrong');
-    const finalAccuracy = document.getElementById('finalAccuracy');
+    const endGameModal = document.getElementById("endGameModal");
+    const finalCorrect = document.getElementById("finalCorrect");
+    const finalWrong = document.getElementById("finalWrong");
+    const finalAccuracy = document.getElementById("finalAccuracy");
 
     // Calculate accuracy percentage
     const total = correctScore + wrongScore;
@@ -330,11 +336,9 @@ function showEndGameModal() {
     // Update final stats
     finalCorrect.textContent = correctScore;
     finalWrong.textContent = wrongScore;
-    finalAccuracy.textContent = accuracy + '%';
+    finalAccuracy.textContent = accuracy + "%";
 
-
-    endGameModal.classList.add('show');
-
+    endGameModal.classList.add("show");
 }
 
 /**
@@ -350,18 +354,16 @@ function resetGame() {
     correctScoreEl.textContent = correctScore;
     wrongScoreEl.textContent = wrongScore;
     updateDifficultyDisplay();
-    
+
     // Hide end game modal
-    const endGameModal = document.getElementById('endGameModal');
-    endGameModal.classList.remove('show');
+    const endGameModal = document.getElementById("endGameModal");
+    endGameModal.classList.remove("show");
 
     generateQuestion();
 }
 /* GAME INITIALIZATION */
 
 // Initialize the game when the page loads
+
 updateDifficultyDisplay();
 generateQuestion();
-
-
-
