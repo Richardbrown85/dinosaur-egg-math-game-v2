@@ -681,11 +681,11 @@ p {
 /* Extra Small Devices (Phones, less than 576px) */
 @media (max-width: 575px) {
     .navbar-brand {
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
 
     .nav-link {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
 
     p {
