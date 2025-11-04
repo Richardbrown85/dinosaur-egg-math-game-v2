@@ -32,7 +32,8 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
+h1,
+h2 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
     text-transform: uppercase;
